@@ -1,0 +1,10 @@
+1- Static visualizations show data as a fixed image, 
+like a chart or graph that does not change. 
+Interactive visualizations let the user explore the data, zoom in, 
+filter, or select different options.
+
+2- Dashboards are useful because they allow people to see updated information in real time and understand trends quickly. 
+This is very helpful when decisions need to be made fast.
+
+3-Tools like Plotly and Dash make it easier to explain data to others because people can interact with the charts. 
+It helps communicate insights better than just showing static images.
