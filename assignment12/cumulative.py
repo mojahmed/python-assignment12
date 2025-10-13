@@ -20,12 +20,8 @@ ORDER BY o.order_id;
 df = pd.read_sql_query(query, conn)
 conn.close()
 
-# Added a cumulative column using apply(), 
-def cumulative(row):
-    totals_above = df['total_price'][0:row.name + 1]
-    return totals_above.sum()
-
-df['cumulative'] = df.apply(cumulative, axis=1)
+# Calculate cumulative revenue using cumsum() for better performance
+df['cumulative'] = df['total_price'].cumsum()
 
 
 ## Plot cumulative revenue vs. order_id
